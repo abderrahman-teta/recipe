@@ -1,0 +1,49 @@
+.hero{
+    background-color: #FCFFD8;
+    
+}
+.hero .info{
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 10rem 0;   
+}
+.hero .info h1{
+       font-size: 2rem;
+       margin-bottom: 1rem;
+}
+.hero .info p{ 
+    font-size: 1.5rem;  
+    opacity: 50%;
+    margin-bottom: 1rem;
+}
+.hero .image{
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+     
+}
+.hero .image img{
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+       
+}
+.recipe {
+    background-color: #F8F8F8;
+
+}
+@media screen  and (min-width:50rem) {
+  .info{
+   
+    text-align: left !important;
+    
+  }
+  .image {
+      width: 50%;
+      padding: 7rem 0 ;
+  }
+  .image img{
+    width: 80%
+}
+}
