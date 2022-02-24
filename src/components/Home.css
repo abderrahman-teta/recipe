@@ -6,14 +6,15 @@
     width: 100%;
     margin: 0 auto;
     text-align: center;
-    padding: 10rem 0;   
+    padding: 10rem 0;  
+    animation: infofde 2s ease; 
 }
 .hero .info h1{
-       font-size: 2rem;
+       font-size: 1.3rem;
        margin-bottom: 1rem;
 }
 .hero .info p{ 
-    font-size: 1.5rem;  
+    font-size: 1rem;  
     opacity: 50%;
     margin-bottom: 1rem;
 }
@@ -24,26 +25,62 @@
      
 }
 .hero .image img{
-    width: 80%;
+    width: 100%;
     margin: 0 auto;
     text-align: center;
-       
+    animation: faidin 2s ease; 
+}
+
+@keyframes faidin {
+    0% {
+        transform: translateX(200%); 
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0%); 
+        opacity: 100%;
+    }
+}
+@keyframes infofde {
+    0% {
+        transform: translateX(-200%); 
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0%); 
+        opacity: 100%;
+    }
 }
 .recipe {
-    background-color: #F8F8F8;
+    text-align: center;
 
 }
+.recipe h1 {
+    margin: 2rem 0;
+}  
 @media screen  and (min-width:50rem) {
   .info{
    
     text-align: left !important;
+    padding-left: 2rem !important;
+  }
+  .info h1{
+   
+    font-size: 1.5rem !important;
+     
+   }
+  .info p{
+   
+   font-size: 1rem !important;
     
   }
-  .image {
-      width: 50%;
-      padding: 7rem 0 ;
-  }
-  .image img{
-    width: 80%
+  .hero .image {
+    width: 30rem;
+    padding: 10rem 0;
+    
+}
+  .hero .image img{
+    width: 30rem;
+   
 }
 }

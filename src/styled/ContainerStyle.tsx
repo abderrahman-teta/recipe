@@ -2,13 +2,13 @@ import styled from "styled-components";
 
 export const NavStyle = styled.nav`
     width: 100%;
-    padding: 1.5rem 0;
+    padding: 1.5rem 2rem;
     box-shadow:.4rem 0 1rem rgba(1,1,1,.15);
     font-size: 1.2rem;
     z-index: 100;
     position: fixed;
     background-color: white;
-   
+    
 `
 
 export const ContainerStyle = styled.div`
@@ -29,8 +29,9 @@ export const ContainerStyle = styled.div`
 
         }
     }
-    @media screen  and (min-width:40rem) {
+    @media screen  and (min-width:50rem) {
         display: flex;
         justify-content: space-between;
+        
     }
 `
