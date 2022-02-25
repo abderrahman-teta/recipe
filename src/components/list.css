@@ -10,12 +10,12 @@ width: 100%;
    
 }
 .container .card{
+    
     text-decoration: none;
     background-color: white;
-    box-shadow: 0 .3rem .5rem rgba(1,1,1,0.15);
-    margin-bottom: 1rem ;
+    
+    
     animation: showin 1.5s ease-in ;
-    min-height:20rem ;
     color: black;
    
 }
@@ -29,15 +29,46 @@ width: 100%;
         transform: scale(1);
     }
 }
+@media screen  and (min-width:30rem) {
+    .container{ 
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 0 auto;
+}
+.container a {
+   width: 48%;
+   min-height: 20rem;
+   padding: 0;
+  margin: 0;
+}
+}
 @media screen  and (min-width:50rem) {
     .container{ 
     display: flex;
-    justify-content: space-between;
+    gap: 1rem;
     flex-wrap: wrap;
-
+    width: 100%;
+    margin: 0 auto;
 }
 .container a {
-   width: 22%;
+   width: 32%;
+   min-height: 20rem;
+   padding: 0;
+  margin: 0;
+}
+}
+@media screen  and (min-width:75rem) {
+    .container{ 
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 0 auto;
+}
+.container a {
+   width: 24%;
    min-height: 20rem;
    padding: 0;
   margin: 0;

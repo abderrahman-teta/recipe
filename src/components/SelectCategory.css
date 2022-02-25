@@ -1,0 +1,20 @@
+.select_container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem; 
+    padding-top: 1rem;
+}
+select {
+    width: 80%;
+    margin: 0 auto;
+    padding: .8rem 1rem;
+    outline: none;
+    border: none;
+    background-color: white;
+    box-shadow: 0 .3rem .5rem rgba(1,1,1,0.15);
+}
+select option{
+    padding: 1rem;
+    margin: 1rem;
+}

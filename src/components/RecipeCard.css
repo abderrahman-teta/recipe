@@ -1,0 +1,14 @@
+
+.img {
+    width: 80%;
+    height: 15rem;
+    
+}
+.card_info{
+    padding: 1rem;
+    width: 80%;
+    margin: 0 auto;
+    
+    box-shadow: 0 .3rem .5rem rgba(1,1,1,0.15);
+    margin-bottom: 1rem;
+}

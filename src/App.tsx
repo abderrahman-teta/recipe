@@ -1,22 +1,14 @@
-import {useState,useEffect} from 'react';
+
 import Globelstyles from './styled/Globelstyles';
 import Home from './components/Home';
 import List from './components/List';
 import Nav from './components/Nav';
 import Search from './components/Search';
 import Page404 from './components/Page404';
+import Meal from './components/Meal'
 import {BrowserRouter as Router,Routes,Route} from 'react-router-dom'
 function App(){
-  const [meals, setMeals] = useState<any[]>([])
-  /*useEffect(()=>{
-    fetch("https://www.themealdb.com/api/json/v1/1/search.php?f=a")
-    .then(response => response.json())
-    .then(result => setMeals(result.meals))
-    .catch(err => {
-      console.error(err);
-    });
-  },[])
-  console.log(meals);*/
+  
   
   return (
     <>
@@ -27,6 +19,7 @@ function App(){
         <Route path='/' element={<Home />}/>
         <Route path='/list' element={<List />}/>
         <Route path='/search' element={<Search />}/>
+        <Route path='/:id' element={<Meal />}/>
         <Route path='*' element={<Page404 />}/>
       </Routes>
     </Router>

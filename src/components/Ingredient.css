@@ -1,0 +1,13 @@
+.ingredient_container{
+   background-color: #FBFBFB ;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: .5em 1rem;
+   margin-bottom: .5rem;
+}
+.ingredient_container label span{
+    margin-left: .5rem;
+    font-size: 1rem;
+    font-weight: 400;
+ }

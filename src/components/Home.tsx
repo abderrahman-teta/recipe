@@ -1,9 +1,14 @@
 import React from "react";
+import {useNavigate} from "react-router-dom"
 import {ContainerStyle } from "../styled/ContainerStyle";
 import {StyledButton} from "../styled/ButtonStyle"
 import HomeCard from '../components/HomeCard';
 import './Home.css'
 const Home:React.FC = () => {
+    const navigate = useNavigate()
+    const handleClick = () =>{
+        navigate('/list')
+    }
     return(
         <>
         <section className="hero">
@@ -11,7 +16,7 @@ const Home:React.FC = () => {
                     <div className="info">
                         <h1>Yummy Recipes</h1>
                         <p>we have a lot of yummy recipes from all aruond the world.</p>
-                        <StyledButton>
+                        <StyledButton onClick={handleClick}>
                             See Recipes
                         </StyledButton>
                     </div>

@@ -4,7 +4,7 @@ export const setRecipesReducer = (state:any = {recipes :[]}, action :Action ) =>
     const {type,payload } = action
     switch (type) {
         case 'SET_RECIPES':
-            return {...state.recipes,recipes : [...state.recipes,payload]}
+            return {recipes : [payload]}
             break;
     
         default:

@@ -1,6 +1,7 @@
 import React from 'react'
 import {CardHomeStyle} from '../styled/CardStylr'
 import {Link} from 'react-router-dom'
+import './RecipeCard.css'
 interface Props {
     idMeal:number,
     strCategory?:string,
@@ -16,7 +17,7 @@ const RecipeCard:React.FC <Props>= ({idMeal,strCategory,strMeal,strMealThumb}) =
         
             <img className="img" src={strMealThumb} alt={strMeal} />
             <div className="card_info">
-                <h2 className="title">{strMeal} </h2>
+             <h2 className="title">{strMeal} </h2>
                
             </div>
         
